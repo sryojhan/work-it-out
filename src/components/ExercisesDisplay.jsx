@@ -1,22 +1,22 @@
-import { useState } from "react";
-import RoutineGenerator from "../utils/RoutineGenerator";
 import ExerciseCard from "./ExerciseCard";
 
+import "../styles/exercises.css"
 
-function ExercisesDisplay({count = 5}){
+function ExercisesDisplay({routine}){
 
-
-    const [routine, setRoutine] = useState([]);
-
-    return <div>
-        {routine.map((exercise, idx) => 
-            <ExerciseCard key={`Exercise card ${idx}`} name={exercise.name}></ExerciseCard>
-        )}
-        <button onClick={()=>{
-            setRoutine(RoutineGenerator.GenerateRoutine(["chest"], count));
-
-        }}>Generate!</button>
-        </div>
+    return <> 
+    
+        { routine.length > 0 ?
+            <div className="exercise-display">
+                {routine.map((exercise, idx) => 
+                    <ExerciseCard key={`Exercise card ${idx}`} name={exercise.name}></ExerciseCard>
+                )}
+            </div>
+            :
+            <h1>Random exercises for each muscle group!</h1>
+        }
+        
+        </>
 }
 
 

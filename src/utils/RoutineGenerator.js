@@ -47,8 +47,6 @@ const RoutineGenerator = (function () {
 
         const selectedExercises = [];
 
-        let counter = 0;
-
         Array.from({ length: length }).forEach(_ => {
 
             const muscleGroup = ChooseRandomFromArray(muscleGroups);
@@ -60,22 +58,24 @@ const RoutineGenerator = (function () {
 
             while(selectedExercises.includes(exercise)){
 
-                counter++;
                 exercise = SelectRandomMuscleGroupExercise(muscleGroupsData);
             }
 
             selectedExercises.push(exercise);
         });
 
-        console.log(counter);
-
         return selectedExercises;
     }
 
 
 
+    const GetAllMuscleGroups = function(){
 
-    return { GenerateRoutine };
+        return Object.keys(exercises);
+    }
+
+
+    return { GenerateRoutine, GetAllMuscleGroups };
 })();
 
 

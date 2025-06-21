@@ -2,8 +2,7 @@
 
 function ExerciseCard({name}){
 
-    return <h1>{name}</h1>
-
+    return <h1 className="exercise-card" >{name}</h1>
 }
 
 
