@@ -1,0 +1,354 @@
+{
+  "chest": {
+    "upper": [
+      {
+        "id": "8b791650-ea30-40fe-b7c5-23cbd607c118",
+        "name": "Incline Barbell Press",
+        "priority": 1
+      },
+      {
+        "id": "5e9f6bd5-7f92-401f-a5d4-d090221a9778",
+        "name": "Incline Dumbbell Press",
+        "priority": 2
+      },
+      {
+        "id": "e26a7c76-9ac0-4c8b-99de-000e0ab0e598",
+        "name": "Incline Machine Press",
+        "priority": 3
+      }
+    ],
+    "lower": [
+      {
+        "id": "1b5ec70d-824f-45b0-8d25-364ebf407581",
+        "name": "Decline Barbell Press",
+        "priority": 1
+      },
+      {
+        "id": "a87edf5a-576e-4267-80f6-e319faed71b7",
+        "name": "Decline Dumbbell Press",
+        "priority": 2
+      },
+      {
+        "id": "2ad67ab3-3233-4c41-ba04-af504ea18b01",
+        "name": "Decline Machine Press",
+        "priority": 3
+      }
+    ],
+    "middle": [
+      {
+        "id": "f0f6b4c1-4f29-4c4e-81cd-0316a7562c66",
+        "name": "Flat Bench Press",
+        "priority": 1
+      },
+      {
+        "id": "400dcd3b-a44b-4f46-82dc-86440afa5722",
+        "name": "Flat Dumbbell Press",
+        "priority": 2
+      },
+      {
+        "id": "0c4c77a9-e65a-4463-b67b-738f1168d07b",
+        "name": "Hammer Strength Press",
+        "priority": 3
+      }
+    ],
+    "flys": [
+      {
+        "id": "f8fa0035-e8ec-44ca-9149-a80dc0f64f93",
+        "name": "Cable Flys",
+        "priority": 1
+      },
+      {
+        "id": "7b6a93a3-77e0-4af7-b46d-4fe602d5c68f",
+        "name": "Dumbbell Flys",
+        "priority": 2
+      },
+      {
+        "id": "b9454174-0bfb-4e2b-913f-47844993684d",
+        "name": "Pec Deck Machine",
+        "priority": 3
+      }
+    ]
+  },
+  "back": {
+    "lats": [
+      {
+        "id": "ab6df6d7-e106-409f-adb7-2c38f03efb7a",
+        "name": "Pull-ups",
+        "priority": 1
+      },
+      {
+        "id": "4750dafc-99f4-43b9-8fd6-b309d550a78e",
+        "name": "Lat Pulldown",
+        "priority": 2
+      },
+      {
+        "id": "1e53bebe-b022-4cad-93d2-b084105ab459",
+        "name": "Cable Row",
+        "priority": 3
+      }
+    ],
+    "traps": [
+      {
+        "id": "99c8e9f8-95d7-40d2-b228-42fc918b7017",
+        "name": "Barbell Shrugs",
+        "priority": 1
+      },
+      {
+        "id": "4cca5212-0fcd-4b3d-bfab-ee6ef3b93169",
+        "name": "Dumbbell Shrugs",
+        "priority": 2
+      },
+      {
+        "id": "f1c7b5e3-8eb2-4f6b-bf8b-ec1a1abfe307",
+        "name": "Face Pulls",
+        "priority": 3
+      }
+    ],
+    "lower": [
+      {
+        "id": "532dc242-e6b3-4324-955c-f2387cf7f68f",
+        "name": "Deadlift",
+        "priority": 1
+      },
+      {
+        "id": "0cd21a53-de32-4bc6-b490-3902b16feeb5",
+        "name": "Back Extensions",
+        "priority": 2
+      },
+      {
+        "id": "8e037a44-e05e-41a1-968b-fedc3125f4ed",
+        "name": "Good Mornings",
+        "priority": 3
+      }
+    ]
+  },
+  "shoulders": {
+    "anterior": [
+      {
+        "id": "6d84420b-392a-40e8-9be9-0558bf2d3241",
+        "name": "Front Raise",
+        "priority": 1
+      },
+      {
+        "id": "b1ee7a1e-b06b-4647-b54a-916f241fcf89",
+        "name": "Arnold Press",
+        "priority": 2
+      },
+      {
+        "id": "b3ff1141-cf86-4921-8be1-c1b6c2ab8da8",
+        "name": "Military Press",
+        "priority": 3
+      }
+    ],
+    "lateral": [
+      {
+        "id": "1153f502-c485-4bfe-8a10-6d0727f0c76e",
+        "name": "Lateral Raise",
+        "priority": 1
+      },
+      {
+        "id": "e522ed77-4fce-4a2a-8285-5cc6d13b85a1",
+        "name": "Cable Lateral Raise",
+        "priority": 2
+      },
+      {
+        "id": "31bc85a3-a1a1-4a03-8375-7b857b75fa69",
+        "name": "Machine Lateral Raise",
+        "priority": 3
+      }
+    ],
+    "posterior": [
+      {
+        "id": "786e3351-8f5b-4649-a5ca-bbd1bbc54f4f",
+        "name": "Reverse Pec Deck",
+        "priority": 1
+      },
+      {
+        "id": "888bffa4-1aa4-4c36-a7dd-696cfadb88c3",
+        "name": "Rear Delt Fly",
+        "priority": 2
+      },
+      {
+        "id": "48146105-4e41-4eae-a305-9d1c3c2b58b5",
+        "name": "Face Pulls",
+        "priority": 3
+      }
+    ]
+  },
+  "legs": {
+    "quads": [
+      {
+        "id": "21dfc953-e454-4595-a354-5d0c7ea79921",
+        "name": "Squats",
+        "priority": 1
+      },
+      {
+        "id": "3df4ecc4-b22b-49eb-82f5-dbe6da9421d9",
+        "name": "Leg Press",
+        "priority": 2
+      },
+      {
+        "id": "a80ecee0-4c94-465b-8fba-87f306a4a5b0",
+        "name": "Lunges",
+        "priority": 3
+      }
+    ],
+    "hamstrings": [
+      {
+        "id": "77a39d48-0b0a-4ee3-94df-b48126c19fe2",
+        "name": "Leg Curl",
+        "priority": 1
+      },
+      {
+        "id": "647f105a-29f8-4773-aa9a-c11b6e095b0f",
+        "name": "Romanian Deadlift",
+        "priority": 2
+      },
+      {
+        "id": "97554a4e-2ac3-4f3d-a725-cff960b8fda1",
+        "name": "Good Mornings",
+        "priority": 3
+      }
+    ],
+    "glutes": [
+      {
+        "id": "dcefce41-b31d-4031-b764-fc60dcae09dc",
+        "name": "Hip Thrust",
+        "priority": 1
+      },
+      {
+        "id": "78b6fa58-6ea1-4d61-a0cd-b68798f77352",
+        "name": "Glute Kickbacks",
+        "priority": 2
+      },
+      {
+        "id": "776abbb9-6ae2-4fd0-9d76-690eb7ef4d87",
+        "name": "Step Ups",
+        "priority": 3
+      }
+    ],
+    "calves": [
+      {
+        "id": "8148375a-b4c8-4ffc-982a-e6881d6e0ad2",
+        "name": "Standing Calf Raise",
+        "priority": 1
+      },
+      {
+        "id": "c6d7e6bb-3db6-462c-95ad-ea437c897075",
+        "name": "Seated Calf Raise",
+        "priority": 2
+      },
+      {
+        "id": "fb735a91-eb92-4437-8e56-ad1ce1af5a76",
+        "name": "Donkey Calf Raise",
+        "priority": 3
+      }
+    ]
+  },
+  "biceps": {
+    "long_head": [
+      {
+        "id": "32392f60-9f1f-4c2b-a424-18b82f36ce89",
+        "name": "Incline Dumbbell Curl",
+        "priority": 1
+      },
+      {
+        "id": "6e8e13b0-f6a7-409f-a1c5-dffb12137123",
+        "name": "Barbell Curl",
+        "priority": 2
+      },
+      {
+        "id": "1d6756d6-0174-4161-9399-5c82695cb439",
+        "name": "Cable Curl",
+        "priority": 3
+      }
+    ],
+    "short_head": [
+      {
+        "id": "a02c4680-b605-42a9-9441-bbcf02951b87",
+        "name": "Concentration Curl",
+        "priority": 1
+      },
+      {
+        "id": "9bb36b96-0056-453a-9643-e56c0fc69d58",
+        "name": "Preacher Curl",
+        "priority": 2
+      },
+      {
+        "id": "8329e91b-e5ec-4dfd-821b-824e1acf5d6b",
+        "name": "Spider Curl",
+        "priority": 3
+      }
+    ],
+    "brachialis": [
+      {
+        "id": "f4fd31b7-f663-4f4d-a399-95ac3b86ec62",
+        "name": "Hammer Curl",
+        "priority": 1
+      },
+      {
+        "id": "34a0afec-d6f3-4b2c-afc2-e13fbac1b297",
+        "name": "Zottman Curl",
+        "priority": 2
+      },
+      {
+        "id": "c72ce66c-6540-4f36-8fff-a7d526b5d8a1",
+        "name": "Reverse Curl",
+        "priority": 3
+      }
+    ]
+  },
+  "triceps": {
+    "long_head": [
+      {
+        "id": "f2d3ff48-d62b-453e-b3a5-7e870bf20a52",
+        "name": "Overhead Dumbbell Extension",
+        "priority": 1
+      },
+      {
+        "id": "9f84f434-3a89-4dff-a408-8005337296a4",
+        "name": "EZ Bar Overhead Extension",
+        "priority": 2
+      },
+      {
+        "id": "c384536b-7fd9-4591-ba1c-2a8036368f71",
+        "name": "Cable Overhead Extension",
+        "priority": 3
+      }
+    ],
+    "lateral_head": [
+      {
+        "id": "703ca1b0-3f60-498e-9bc8-fc8b5932609e",
+        "name": "Tricep Pushdown",
+        "priority": 1
+      },
+      {
+        "id": "e21d2291-f746-45d0-bd9c-360d6872dc6b",
+        "name": "Dips",
+        "priority": 2
+      },
+      {
+        "id": "c9b8ffe4-8051-40c8-bb93-7bdfca241d61",
+        "name": "Close-Grip Bench Press",
+        "priority": 3
+      }
+    ],
+    "medial_head": [
+      {
+        "id": "626243fc-c2a0-40c6-9f5b-1a593c42a808",
+        "name": "Reverse Grip Pushdown",
+        "priority": 1
+      },
+      {
+        "id": "e896e644-7dbb-4cb8-a69c-fbc8c5d8c856",
+        "name": "Kickbacks",
+        "priority": 2
+      },
+      {
+        "id": "67bdba0b-8592-4342-8ac2-33c28e0cb063",
+        "name": "Diamond Push-ups",
+        "priority": 3
+      }
+    ]
+  }
+}
