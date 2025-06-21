@@ -2,7 +2,7 @@
 
 function GenerateButton({ generate }) {
 
-    return <button onClick={() => {
+    return <button className="generate-button" onClick={() => {
         generate();
     }}>Generate!</button>;
 
