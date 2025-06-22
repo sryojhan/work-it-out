@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 
 import RoutineGenerator from "./utils/RoutineGenerator";
 

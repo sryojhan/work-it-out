@@ -56,12 +56,12 @@ const RoutineGenerator = (function () {
             let exercise = SelectRandomMuscleGroupExercise(muscleGroupsData);
 
 
-            while(selectedExercises.includes(exercise)){
+            while(selectedExercises.find(elem => elem.name === exercise.name)){
 
                 exercise = SelectRandomMuscleGroupExercise(muscleGroupsData);
             }
 
-            selectedExercises.push(exercise);
+            selectedExercises.push({...exercise, muscleGroup});
         });
 
         return selectedExercises;

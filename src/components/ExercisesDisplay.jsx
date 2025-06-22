@@ -9,7 +9,7 @@ function ExercisesDisplay({routine}){
         { routine.length > 0 ?
             <div className="exercise-display">
                 {routine.map((exercise, idx) => 
-                    <ExerciseCard key={`Exercise card ${idx}`} name={exercise.name}></ExerciseCard>
+                    <ExerciseCard key={`Exercise card ${idx}`} name={exercise.name} muscleGroup={exercise.muscleGroup}></ExerciseCard>
                 )}
             </div>
             :
