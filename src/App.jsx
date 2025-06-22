@@ -9,11 +9,15 @@ import GenerateButton from './components/GenerateButton'
 
 function App() {
 
+  let count = 5;
+
   const [routine, setRoutine] = useState([]);
 
   const muscleGroups = RoutineGenerator.GetAllMuscleGroups();
 
   const [selected, setSelected] = useState(Array(muscleGroups.length).fill(false));
+
+  const [locked, setLocked] = useState(Array(count).fill(false));
 
   const toggleSelection = (idx) => {
 
@@ -23,8 +27,13 @@ function App() {
   };
 
 
+  const toggleLocked = (idx) =>{
 
-  let count = 5;
+    const newLocked = [...locked];
+    newLocked[idx] = !newLocked[idx];
+    setLocked(newLocked);
+  }
+
 
   const generateRoutine = () => {
 
@@ -41,7 +50,7 @@ function App() {
   return (
     <>
       <ExerciseOptions key='options' selected={selected} toggleSelection={toggleSelection} muscleGroups={muscleGroups}></ExerciseOptions>
-      <ExercisesDisplay key='display' routine={routine}></ExercisesDisplay>
+      <ExercisesDisplay key='display' routine={routine} locked={locked} setLocked={toggleLocked}></ExercisesDisplay>
       <GenerateButton key='generate-button' generate={generateRoutine} ></GenerateButton>
     </>
   )

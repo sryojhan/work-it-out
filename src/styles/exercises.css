@@ -57,7 +57,7 @@
 
     flex: 1 1 250px;
 
-    box-shadow: rgba(0, 0, 0, 0.089) 5px 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.089) 0px 0px 5px 2px;
 
 }
 
@@ -68,9 +68,20 @@
 
 .lock-button {
 
+    color: black;
     background-color: transparent;
     aspect-ratio: 1;
 
+    box-sizing: border-box;
+    border: 2px transparent solid;
+
+}
+
+.lock-icon{
+
+
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 
