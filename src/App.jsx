@@ -5,6 +5,7 @@ import RoutineGenerator from "./utils/RoutineGenerator";
 import ExercisesDisplay from './components/ExercisesDisplay'
 import ExerciseOptions from './components/ExerciseOptions'
 import GenerateButton from './components/GenerateButton'
+import MadeByFooter from './components/MadeByFooter';
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
       <ExerciseOptions key='options' selected={selected} toggleSelection={toggleSelection} muscleGroups={muscleGroups}></ExerciseOptions>
       <ExercisesDisplay key='display' routine={routine} locked={locked} setLocked={toggleLocked}></ExercisesDisplay>
       <GenerateButton key='generate-button' generate={generateRoutine} ></GenerateButton>
+      <MadeByFooter></MadeByFooter>
     </>
   )
 }
