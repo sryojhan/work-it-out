@@ -28,7 +28,7 @@ function App() {
   };
 
 
-  const toggleLocked = (idx) =>{
+  const toggleLocked = (idx) => {
 
     const newLocked = [...locked];
     newLocked[idx] = !newLocked[idx];
@@ -38,14 +38,17 @@ function App() {
 
   const generateRoutine = () => {
 
-    const selectedMuscleGroups = selected.reduce((arr, value, idx)=>{
-      if(value) arr.push(idx);
+    const selectedMuscleGroups = selected.reduce((arr, value, idx) => {
+      if (value) arr.push(idx);
       return arr;
     }, []).map(value => muscleGroups[value]);
 
-    if(selectedMuscleGroups.length === 0) return;
+    if (selectedMuscleGroups.length === 0) return;
 
-    setRoutine(RoutineGenerator.GenerateRoutine(selectedMuscleGroups, count));
+
+    const alreadySelected = locked.map((value, idx) => value ? routine[idx] : null);
+
+    setRoutine(RoutineGenerator.GenerateRoutine(selectedMuscleGroups, count, alreadySelected));
   }
 
   return (

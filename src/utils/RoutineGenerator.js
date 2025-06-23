@@ -43,11 +43,15 @@ const RoutineGenerator = (function () {
      * @param {number} length 
      * @returns {Exercise[]} generated routine
      */
-    const GenerateRoutine = function (muscleGroups, length) {
+    const GenerateRoutine = function (muscleGroups, length, alreadySelected) {
 
+
+        const lockedExercisesCount = alreadySelected.reduce((acum, value) => acum += value !== null ? 1 : 0, 0)
+        
+        const newExercisesLength = length - lockedExercisesCount;
+        
         const selectedExercises = [];
-
-        Array.from({ length: length }).forEach(_ => {
+        Array.from({ length: newExercisesLength }).forEach(_ => {
 
             const muscleGroup = ChooseRandomFromArray(muscleGroups);
 
@@ -56,7 +60,7 @@ const RoutineGenerator = (function () {
             let exercise = SelectRandomMuscleGroupExercise(muscleGroupsData);
 
 
-            while(selectedExercises.find(elem => elem.name === exercise.name)){
+            while(selectedExercises.find(elem => elem.id === exercise.id) || alreadySelected.find(elem => elem && elem.id === exercise.id)){
 
                 exercise = SelectRandomMuscleGroupExercise(muscleGroupsData);
             }
@@ -64,7 +68,17 @@ const RoutineGenerator = (function () {
             selectedExercises.push({...exercise, muscleGroup});
         });
 
-        return selectedExercises;
+
+        const routine = [...alreadySelected];
+
+
+        selectedExercises.forEach(elem => {
+
+            const idx = routine.findIndex(value => value === null);
+            routine[idx] = elem;
+        });
+
+        return routine;
     }
 
 
