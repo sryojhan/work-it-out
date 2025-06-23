@@ -61,6 +61,12 @@
 
 }
 
+
+.exercise-card.locked{
+
+    background-color: #10b9813f;
+}
+
 .exercise-card h2 {
 
     margin: auto;
@@ -79,41 +85,22 @@
 
 .lock-icon{
 
-
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 24px;
+    height: 24px;
 }
 
 
-.exercise-card .lock-button:focus {
+.exercise-card .lock-button:focus-visible {
 
     outline: none;
     border: 2px #054d35 solid;
 }
 
 
-
 .lock-button:hover {
 
     background-color: #10b98165;
 }
-
-/* 
-@media (max-width: 850px) {
-
-
-    .exercise-display {
-
-        flex-direction: column;
-    }
-
-    .exercise-card {
-
-        flex-direction: row;
-        justify-content: space-between;
-    }
-} */
-
 
 
 @keyframes reveal-card {
@@ -175,7 +162,7 @@
 
 }
 
-.selectable-button:focus {
+.selectable-button:focus-visible {
 
     outline: none;
     transform: translateY(-5px);
