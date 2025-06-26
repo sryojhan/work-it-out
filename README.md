@@ -39,9 +39,8 @@ Everything runs client-side with no backend — transitions are instant and the 
 ## 🧰 Technologies Used
 
 - React + Vite
-- JavaScript (ES6)
-- TailwindCSS
-- PropTypes
+- JavaScript (ES6) with JSDoc
+- Css
 - Local JSON-based exercise data
 
 ---
