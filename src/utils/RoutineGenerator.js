@@ -34,7 +34,7 @@ const RoutineGenerator = (function () {
 
         const exercise = ChooseRandomFromArray(muscleGroupsData[muscleSection]);
 
-        return exercise;
+        return {...exercise, muscleSection};
     }
 
 

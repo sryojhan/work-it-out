@@ -1,12 +1,12 @@
 
 
-function ExerciseCard({name, muscleGroup, locked, setLocked}){
+function ExerciseCard({exercise, locked, setLocked}){
 
 
     return <div className={`exercise-card ${locked && 'locked'}`}>
 
-        <h4>{muscleGroup}</h4>
-        <h2>{name}</h2>
+        <h4>{`${exercise.muscleGroup}: ${exercise.muscleSection}`}</h4>
+        <h2>{exercise.name}</h2>
 
         <button className='lock-button' onClick={setLocked}>
 
