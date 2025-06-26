@@ -32,7 +32,7 @@ Everything runs client-side with no backend — transitions are instant and the 
 
 ## 📸 Media
 
-![App Preview](./screenshot.png) <!-- Replace with actual image/GIF when available -->
+![App Preview](./media/work-it-out.png) <!-- Replace with actual image/GIF when available -->
 
 ---
 
